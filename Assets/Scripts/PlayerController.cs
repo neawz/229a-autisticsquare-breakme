@@ -4,18 +4,11 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-
-    private float forwardInput;
-    private float horizontalInput;
-    private Vector3 moveInput;
+    public float rotationSpeed = 120f;
     private InputAction moveAction;
     void Awake()
     {
         moveAction = InputSystem.actions.FindAction("Move");
-    }
-    void Start()
-    {
-        
     }
 
     void Update()
@@ -25,10 +18,8 @@ public class PlayerController : MonoBehaviour
 
     public void Move()
     {
-        moveInput = moveAction.ReadValue<Vector2>();
-        forwardInput = moveInput.y;
-        horizontalInput = moveInput.x;
+        Vector2 moveInput = moveAction.ReadValue<Vector2>();
         transform.Translate(moveInput.y * moveSpeed * Time.deltaTime * Vector3.forward);
-        transform.Translate(moveInput.x * moveSpeed * Time.deltaTime * Vector3.right);
+        transform.Rotate(moveInput.x * rotationSpeed * Time.deltaTime * Vector3.up);
     }
 }
