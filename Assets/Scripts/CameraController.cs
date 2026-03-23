@@ -13,11 +13,11 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float maxY = 60f;
 
     [Header("Smoothing")]
-    [SerializeField] private float followSmooth = 10f;  // ความนุ่มตอนตาม target
-    [SerializeField] private float rotateSmooth = 10f;  // ความนุ่มตอนหมุน
+    [SerializeField] private float followSmooth = 10f;
+    [SerializeField] private float rotateSmooth = 10f;
 
-    private float yaw;    // หมุนซ้าย/ขวา
-    private float pitch;  // หมุนขึ้น/ลง
+    private float yaw;
+    private float pitch;
     private Vector3 currentPos;
     private Quaternion currentRot;
 
@@ -34,13 +34,11 @@ public class CameraController : MonoBehaviour
     {
         if (target == null) return;
 
-        // อ่าน Mouse Delta จาก New Input System
         Vector2 mouseDelta = Mouse.current.delta.ReadValue();
         yaw += mouseDelta.x * sensitivity;
         pitch -= mouseDelta.y * sensitivity;
         pitch = Mathf.Clamp(pitch, minY, maxY);
 
-        // คำนวณ position ที่ต้องการ
         Quaternion targetRot = Quaternion.Euler(pitch, yaw, 0f);
         Vector3 targetPos = target.position - targetRot * Vector3.forward * distance;
 
@@ -52,7 +50,6 @@ public class CameraController : MonoBehaviour
         transform.rotation = currentRot;
     }
 
-    /// เรียกจาก RagdollSwitch ตอน Ragdoll เริ่ม → เปลี่ยน target เป็น Hips bone
     public void SetTarget(Transform newTarget)
     {
         target = newTarget;
