@@ -1712,6 +1712,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2189e4f40f66f469fc26aa0908d301, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoneParts
+--- !u!4 &122068373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3003871369446675545, guid: e225809dd6503a240a0ac6c926d69b85, type: 3}
+  m_PrefabInstance: {fileID: 330734379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &125762087
 GameObject:
   m_ObjectHideFlags: 0
@@ -19746,8 +19751,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29597e8adc80d57479542ef91ac584b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
-  player: {fileID: 122068360}
-  offset: {x: 0, y: 2.5, z: -5}
+  target: {fileID: 122068373}
+  distance: 5
+  sensitivity: 0.3
+  minY: -20
+  maxY: 60
+  followSmooth: 10
+  rotateSmooth: 10
 --- !u!1 &1564357318
 GameObject:
   m_ObjectHideFlags: 0

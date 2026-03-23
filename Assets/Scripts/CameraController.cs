@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-/// ตอน Ragdoll ให้เรียก SetTarget(hipsBone.transform) จาก RagdollSwitch
 public class CameraController : MonoBehaviour
 {
     [Header("Target")]
