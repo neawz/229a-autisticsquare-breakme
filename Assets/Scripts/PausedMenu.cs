@@ -20,6 +20,7 @@ public class PausedMenu : MonoBehaviour
             }
         }
     }
+
     public void Resume()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -28,6 +29,7 @@ public class PausedMenu : MonoBehaviour
         Time.timeScale = 1.0f;
         GameIsPaused = false;
     }
+    
     void Pause()
     {
         Cursor.lockState = CursorLockMode.None;

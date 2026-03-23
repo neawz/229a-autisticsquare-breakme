@@ -10213,8 +10213,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 759768684}
-  - component: {fileID: 759768683}
   - component: {fileID: 759768685}
+  - component: {fileID: 759768686}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -10222,18 +10222,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &759768683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759768682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b8d5534b73ba34599f3d068a71deca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MainManu
 --- !u!4 &759768684
 Transform:
   m_ObjectHideFlags: 0
@@ -10262,6 +10250,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PausedMenu
   pauseMenuUI: {fileID: 1508626142}
+--- !u!114 &759768686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759768682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724c001940110da40a3532976c14a444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
 --- !u!1001 &768905392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19789,7 +19789,7 @@ Transform:
   m_GameObject: {fileID: 1556078602}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 36, z: -23.7}
+  m_LocalPosition: {x: 0, y: 283.3, z: -82.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19826,7 +19826,7 @@ GameObject:
   - component: {fileID: 1564357321}
   - component: {fileID: 1564357320}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23190,9 +23190,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 759768683}
-        m_TargetAssemblyTypeName: MainManu, Assembly-CSharp
-        m_MethodName: MainMenu
+      - m_Target: {fileID: 759768686}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
