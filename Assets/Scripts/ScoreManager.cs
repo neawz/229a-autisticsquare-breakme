@@ -7,8 +7,8 @@ public class ScoreManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private int pointsPerHit = 10;
- 
-    private int totalScore;
+    [SerializeField] private int totalScore;
+    public int TotalScore => totalScore;
  
     void Awake()
     {

@@ -6,12 +6,8 @@ public class RagdollTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered ragdoll trigger");
-            RagdollSwitch ragdollSwitch = other.GetComponentInParent<RagdollSwitch>();
-            if (ragdollSwitch != null)
-            {
-                ragdollSwitch.EnableRagdoll();
-            }
+            if (!other.CompareTag("Player")) return;
+            other.GetComponentInParent<RagdollSwitch>()?.EnableRagdoll();
         }
     }
 }
