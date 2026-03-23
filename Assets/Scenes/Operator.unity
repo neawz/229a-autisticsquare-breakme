@@ -5378,7 +5378,7 @@ Transform:
   m_GameObject: {fileID: 400746580}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.267265, y: 321.57248, z: -138.34726}
+  m_LocalPosition: {x: 19.31677, y: 230.10168, z: -202.54297}
   m_LocalScale: {x: 41.076176, y: 2.3229127, z: 37.574284}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6070,7 +6070,7 @@ GameObject:
   - component: {fileID: 471103872}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6642,8 +6642,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490790057}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3631431, y: -0, z: -0, w: 0.9317334}
-  m_LocalPosition: {x: 3.79418, y: 198.86322, z: 15.21302}
+  m_LocalRotation: {x: 0.25757867, y: -0, z: -0, w: 0.96625733}
+  m_LocalPosition: {x: 3.79418, y: 140.13791, z: -24.98133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6682,7 +6682,7 @@ Transform:
   - {fileID: 1280573056}
   - {fileID: 261235116}
   m_Father: {fileID: 915188861}
-  m_LocalEulerAnglesHint: {x: 42.587, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.853, y: 0, z: 0}
 --- !u!1 &495504279
 GameObject:
   m_ObjectHideFlags: 0
@@ -7823,7 +7823,7 @@ GameObject:
   - component: {fileID: 638642831}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9515,6 +9515,7 @@ GameObject:
   - component: {fileID: 713992591}
   - component: {fileID: 713992590}
   - component: {fileID: 713992589}
+  - component: {fileID: 713992592}
   m_Layer: 0
   m_Name: Speed Pad (9)
   m_TagString: Untagged
@@ -9615,6 +9616,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713992587}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &713992592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713992587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &727461093
 GameObject:
   m_ObjectHideFlags: 0
@@ -10362,6 +10376,7 @@ GameObject:
   - component: {fileID: 777419224}
   - component: {fileID: 777419223}
   - component: {fileID: 777419222}
+  - component: {fileID: 777419225}
   m_Layer: 0
   m_Name: Speed Pad (10)
   m_TagString: Untagged
@@ -10462,6 +10477,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 777419220}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &777419225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777419220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &787272596
 GameObject:
   m_ObjectHideFlags: 0
@@ -10922,6 +10950,7 @@ GameObject:
   - component: {fileID: 829355188}
   - component: {fileID: 829355187}
   - component: {fileID: 829355186}
+  - component: {fileID: 829355189}
   m_Layer: 0
   m_Name: Speed Pad (6)
   m_TagString: Untagged
@@ -11022,6 +11051,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829355184}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &829355189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829355184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &854711066
 GameObject:
   m_ObjectHideFlags: 0
@@ -12673,6 +12715,7 @@ GameObject:
   - component: {fileID: 1004503956}
   - component: {fileID: 1004503955}
   - component: {fileID: 1004503954}
+  - component: {fileID: 1004503957}
   m_Layer: 0
   m_Name: Speed Pad (2)
   m_TagString: Untagged
@@ -12773,6 +12816,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004503952}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1004503957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004503952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &1004983726
 GameObject:
   m_ObjectHideFlags: 0
@@ -12899,6 +12955,7 @@ GameObject:
   - component: {fileID: 1023190979}
   - component: {fileID: 1023190978}
   - component: {fileID: 1023190977}
+  - component: {fileID: 1023190980}
   m_Layer: 0
   m_Name: Speed Pad (7)
   m_TagString: Untagged
@@ -12999,6 +13056,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023190975}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1023190980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023190975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &1045733255
 GameObject:
   m_ObjectHideFlags: 0
@@ -13347,6 +13417,7 @@ GameObject:
   - component: {fileID: 1066681112}
   - component: {fileID: 1066681111}
   - component: {fileID: 1066681110}
+  - component: {fileID: 1066681114}
   m_Layer: 0
   m_Name: Speed Pad
   m_TagString: Untagged
@@ -13447,6 +13518,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2007869367}
   m_LocalEulerAnglesHint: {x: 21, y: 180, z: 0}
+--- !u!114 &1066681114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066681109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &1067326375
 GameObject:
   m_ObjectHideFlags: 0
@@ -17289,8 +17373,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325168198}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3631431, y: -0, z: -0, w: 0.9317334}
-  m_LocalPosition: {x: 3.79418, y: 198.86322, z: 15.21302}
+  m_LocalRotation: {x: 0.25757867, y: -0, z: -0, w: 0.96625733}
+  m_LocalPosition: {x: 3.79418, y: 140.13791, z: -24.98133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17352,7 +17436,7 @@ Transform:
   - {fileID: 749818112}
   - {fileID: 818400884}
   m_Father: {fileID: 915188861}
-  m_LocalEulerAnglesHint: {x: 42.587, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.853, y: 0, z: 0}
 --- !u!1 &1329086769
 GameObject:
   m_ObjectHideFlags: 0
@@ -19184,8 +19268,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525929782}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3631431, y: -0, z: -0, w: 0.9317334}
-  m_LocalPosition: {x: 3.79418, y: 40.591755, z: 187.41214}
+  m_LocalRotation: {x: 0.25757867, y: -0, z: -0, w: 0.96625733}
+  m_LocalPosition: {x: 3.79418, y: 23.715794, z: 177.86908}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19252,7 +19336,7 @@ Transform:
   - {fileID: 977223941}
   - {fileID: 99523470}
   m_Father: {fileID: 915188861}
-  m_LocalEulerAnglesHint: {x: 42.587, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.853, y: 0, z: 0}
 --- !u!1 &1539880928
 GameObject:
   m_ObjectHideFlags: 0
@@ -19638,8 +19722,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609918084}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3631431, y: -0, z: -0, w: 0.9317334}
-  m_LocalPosition: {x: 3.79418, y: -117.67894, z: 359.61194}
+  m_LocalRotation: {x: 0.25757867, y: -0, z: -0, w: 0.96625733}
+  m_LocalPosition: {x: 3.79418, y: -92.70535, z: 380.71988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19699,7 +19783,7 @@ Transform:
   - {fileID: 239387157}
   - {fileID: 154497269}
   m_Father: {fileID: 915188861}
-  m_LocalEulerAnglesHint: {x: 42.587, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.853, y: 0, z: 0}
 --- !u!1 &1614183465
 GameObject:
   m_ObjectHideFlags: 0
@@ -20498,6 +20582,7 @@ GameObject:
   - component: {fileID: 1660757622}
   - component: {fileID: 1660757621}
   - component: {fileID: 1660757620}
+  - component: {fileID: 1660757623}
   m_Layer: 0
   m_Name: Speed Pad (1)
   m_TagString: Untagged
@@ -20598,6 +20683,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660757618}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1660757623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660757618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &1670099711
 GameObject:
   m_ObjectHideFlags: 0
@@ -22516,6 +22614,7 @@ GameObject:
   - component: {fileID: 1844481576}
   - component: {fileID: 1844481575}
   - component: {fileID: 1844481574}
+  - component: {fileID: 1844481577}
   m_Layer: 0
   m_Name: Speed Pad (11)
   m_TagString: Untagged
@@ -22616,6 +22715,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844481572}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1844481577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844481572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &1848727167
 GameObject:
   m_ObjectHideFlags: 0
@@ -24320,8 +24432,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007869366}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3631431, y: -0, z: -0, w: 0.9317334}
-  m_LocalPosition: {x: 19.31677, y: 336.30646, z: -136.04333}
+  m_LocalRotation: {x: 0.25757867, y: -0, z: -0, w: 0.96625733}
+  m_LocalPosition: {x: 19.31677, y: 240.8615, z: -202.81299}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24338,7 +24450,7 @@ Transform:
   - {fileID: 359207860}
   - {fileID: 1633458267}
   m_Father: {fileID: 915188861}
-  m_LocalEulerAnglesHint: {x: 42.587, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 29.853, y: 0, z: 0}
 --- !u!1 &2016697931
 GameObject:
   m_ObjectHideFlags: 0
@@ -24734,13 +24846,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036034185}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.37444475, y: 0, z: 0, w: 0.92724925}
-  m_LocalPosition: {x: -0.01, y: 374.72, z: 13.19}
+  m_LocalRotation: {x: 0.26930797, y: -0, z: -0, w: 0.9630541}
+  m_LocalPosition: {x: -0.010000229, y: 284.27972, z: -51.936646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 43.98, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.246, y: 0, z: 0}
 --- !u!1 &2041425729
 GameObject:
   m_ObjectHideFlags: 0
@@ -25325,11 +25437,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1841324362608499359, guid: 79469017a005ab247acac2928904bf66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 372.8263
+      value: 281.36
       objectReference: {fileID: 0}
     - target: {fileID: 1841324362608499359, guid: 79469017a005ab247acac2928904bf66, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.546299
+      value: -71.7
       objectReference: {fileID: 0}
     - target: {fileID: 1841324362608499359, guid: 79469017a005ab247acac2928904bf66, type: 3}
       propertyPath: m_LocalRotation.w
@@ -25428,6 +25540,7 @@ GameObject:
   - component: {fileID: 2102539266}
   - component: {fileID: 2102539265}
   - component: {fileID: 2102539264}
+  - component: {fileID: 2102539267}
   m_Layer: 0
   m_Name: Speed Pad (3)
   m_TagString: Untagged
@@ -25528,6 +25641,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102539262}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2102539267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102539262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &2107659100
 GameObject:
   m_ObjectHideFlags: 0
@@ -25652,6 +25778,7 @@ GameObject:
   - component: {fileID: 2110951175}
   - component: {fileID: 2110951174}
   - component: {fileID: 2110951173}
+  - component: {fileID: 2110951176}
   m_Layer: 0
   m_Name: Speed Pad (8)
   m_TagString: Untagged
@@ -25752,6 +25879,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110951171}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2110951176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110951171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b847e39df6005948872f8f654fb5e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpeedRamp
+  acceleration: 500
 --- !u!1 &2114313705
 GameObject:
   m_ObjectHideFlags: 0
