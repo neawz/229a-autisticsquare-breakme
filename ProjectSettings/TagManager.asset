@@ -42,5 +42,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Button
+    uniqueID: 3782307307
+    locked: 0
+  - name: Title
+    uniqueID: 3532303685
+    locked: 0
   m_RenderingLayers:
   - Default
