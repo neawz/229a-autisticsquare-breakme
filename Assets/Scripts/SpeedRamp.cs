@@ -5,7 +5,7 @@ public class SpeedRamp : MonoBehaviour
     [SerializeField] private float acceleration = 500f;
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.GetComponentInParent<RagdollSwitch>()) return;
+        if (collision.gameObject.GetComponentInParent<RagdollSwitch>() == null) return;
 
         Rigidbody rb = collision.gameObject.GetComponentInParent<Rigidbody>();
 

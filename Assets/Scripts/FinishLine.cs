@@ -16,6 +16,8 @@ public class FinishLine : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", roundScore);
         }
         PlayerPrefs.Save();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene("Endgame");
     }
 }

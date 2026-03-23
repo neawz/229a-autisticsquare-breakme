@@ -8,7 +8,6 @@ public class ScoreSummary : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI roundScoreText;
     [SerializeField] private TextMeshProUGUI highScoreText;
-    [SerializeField] private Button creditButton;
     void Start()
     {
         roundScoreText.text = $"Round Score: {PlayerPrefs.GetInt("RoundScore", 0)}";
@@ -22,7 +21,7 @@ public class ScoreSummary : MonoBehaviour
 
     public void ShowCredits()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Credit");
     }
 
 }
