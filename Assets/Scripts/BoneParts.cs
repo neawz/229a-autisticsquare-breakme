@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BoneParts : MonoBehaviour
 {
-    [SerializeField] private float hitCooldown = 1f;
+    [SerializeField] private float hitCooldown = 0.5f;
     private float lastHitTime = -Mathf.Infinity;
     private Renderer rend;
     private Color originalColor;
